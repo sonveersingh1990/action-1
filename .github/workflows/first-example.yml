@@ -13,6 +13,6 @@ jobs:
         - name: List files
           run: | 
             ls -ltr 
-            cat README.md
-            sudo apt install python3
+            chomod +x
+            ./python.sh
          
