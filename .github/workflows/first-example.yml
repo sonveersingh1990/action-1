@@ -11,8 +11,9 @@ jobs:
         - name: welcome message 
           run: echo "This is my fist github action job to run"
         - name: List files
-          run: | 
-            ls -ltr 
+          run: ls -ltr 
+        - name: Execute shell script
+          run: 
             chmod +x python.sh 
             ./python.sh
          
