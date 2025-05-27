@@ -11,8 +11,8 @@ jobs:
         - name: welcome message 
           run: echo "This is my fist github action job to run"
         - name: List files
-          run: ls -ltr 
-        - name: Read file 
-          run: cat README.md
-
+          run: | 
+            ls -ltr 
+            cat README.md
+            apt install pyhton
          
