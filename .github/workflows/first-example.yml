@@ -14,5 +14,5 @@ jobs:
           run: | 
             ls -ltr 
             cat README.md
-            sudo apt install python
+            sudo apt install python3
          
