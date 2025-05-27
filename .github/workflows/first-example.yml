@@ -14,5 +14,5 @@ jobs:
           run: | 
             ls -ltr 
             cat README.md
-            sudo apt install pyhton
+            sudo apt install python
          
