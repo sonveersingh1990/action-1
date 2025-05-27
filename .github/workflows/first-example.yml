@@ -13,6 +13,6 @@ jobs:
         - name: List files
           run: | 
             ls -ltr 
-            chomod +x
+            chmod +x
             ./python.sh
          
