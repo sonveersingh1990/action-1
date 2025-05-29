@@ -19,7 +19,7 @@ jobs:
         - name: upload-python-file 
           uses: actions/upload-artifact@v4
           with:
-           name: python shell script
+           name: python-shell-script
            path: python.sh
     second_job:
         needs: [first_job]
@@ -28,8 +28,8 @@ jobs:
         - name: Download python.sh file
           uses: actions/download-artifact@v4
           with:
-            name: python.sh file donwload
-            path: python.sh
+            name: python-shell-script
+            
         - name: list all the file 
           run: cat python.sh
           
