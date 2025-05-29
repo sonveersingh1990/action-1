@@ -16,4 +16,12 @@ jobs:
           run: 
             chmod +x python.sh 
             ./python.sh
+    second_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: list all the file 
+          run: ls -altr 
+          
+        
+        
          
