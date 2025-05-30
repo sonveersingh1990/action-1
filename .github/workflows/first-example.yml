@@ -24,6 +24,9 @@ jobs:
            path: python.sh
     second_job:
         needs: [first_job]
+        concurrency:
+          group: production_workload
+          cancel-in-progress: true
         runs-on: ubuntu-latest
         steps:
         - name: Download python.sh file
