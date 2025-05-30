@@ -35,7 +35,8 @@ jobs:
             name: python-shell-script
             
         - name: list all the file 
-          run: cat python.sh
+          run: |
+            echo "Thid is concurrency test"
             sleep 300s
           
         
