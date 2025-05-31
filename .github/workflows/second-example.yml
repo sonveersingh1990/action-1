@@ -10,6 +10,9 @@ jobs:
         matrix: 
             Os: [ubuntu-latest, ubuntu-22.04, windows-latest]
             images: [hello-world, alpine]
+            exclude:
+                - images: alpine
+                  Os: windows-latest
     runs-on: ${{matrix.Os}}
     steps:
     - name: Docker
