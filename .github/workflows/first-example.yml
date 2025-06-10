@@ -38,6 +38,11 @@ jobs:
           run: |
             echo "Thid is concurrency test"
             sleep 300s
+    github_context:
+        runs-on: ubuntu-latest
+        steps:
+        - name: github_context 
+          run: echo "$GITHUB_CONTEXT"
           
         
         
