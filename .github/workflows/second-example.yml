@@ -1,9 +1,11 @@
 name: Explore Matrix configuration
 
 on: 
- push:   
  workflow_dispatch:
-
+ push: 
+  branches:
+    - main
+    - feature/*
 jobs: 
   deploy:
     strategy:
