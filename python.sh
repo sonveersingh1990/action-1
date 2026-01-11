@@ -3,3 +3,4 @@
 sudo apt install python3
 sudo apt update
 sudo apt install apache2
+sudo pip install jira
